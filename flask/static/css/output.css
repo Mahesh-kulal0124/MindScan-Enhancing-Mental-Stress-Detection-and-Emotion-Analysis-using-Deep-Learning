@@ -1,0 +1,79 @@
+.containero {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.meter {
+    height: 40px;
+    width: 500px;
+    background-color: #f5f5f5;
+    border-radius: 20px;
+    margin: 20px auto;
+    overflow: hidden; /* Hides the overflowing part of the span */
+    position: relative; /* Allows positioning of the animated span */
+}
+
+.meter span {
+    display: block;
+    height: 100%;
+    border-radius: 10px;
+    background-color: rgb(224, 224, 28); /* Default color */
+    width: 0; /* Initially start with 0 width */
+    animation: fillMeter 2s ease-in-out forwards; /* Animation to fill the meter */
+}
+
+/* Color based on score value */
+.meter span.low {
+    background-color: rgb(39, 128, 39); /* Green */
+}
+
+.meter span.high {
+    background-color: #c91c0f; /* Red */
+}
+
+/* Animation for width change */
+@keyframes fillMeter {
+    from {
+        width: 0; /* Start with 0 width */
+    }
+    to {
+        width: {{ score }}%; /* Fill to the score value */
+    }
+}
+
+.para{
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.heading{
+    font-size: 40px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+}
+
+.score_value{
+    width: auto;
+    height: 100px;
+    text-align: center;
+    padding-top: 30px;
+    font-size: 40px;
+    background-color: rgb(105, 230, 166);
+    border-radius: 50%;
+    font-family: cursive;
+    margin-top: 10px;
+
+}
+.buttons{
+    margin: 30px 10px;
+    padding: 10px;
+}
+.button{
+    font-size: 20px;
+    margin: 10px 20px;
+    height: 50px;
+    padding: 10px 20px;
+    border-radius: 15px;
+    font-family: monospace;
+    background-color: #3186dc;
+}

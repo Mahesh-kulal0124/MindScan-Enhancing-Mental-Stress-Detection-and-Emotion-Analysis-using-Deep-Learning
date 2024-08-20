@@ -1,0 +1,57 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stress Level Indicator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/output.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Stress Level Indicator</h1>
+        <div class="meter">
+            <span style="width: {{ score }}%" class="score {{ score_class }}"></span>
+        </div>
+        <p>Score: {{ score }}</p>
+    </div>
+</body>
+</html> -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stress Level Indicator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/output.css') }}">
+</head>
+<body> -->
+    {% extends "layout.html" %}
+    {% block body  %}
+    <header class="masthead" style="background-image: url('{{url_for('static',filename='assets/img/result_background.jpg')}}')">
+        <div class="container position-relative px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col-md-10 col-lg-8 col-xl-7">
+                    <div class="site-heading">
+                        <h2>MindScan-Enhancing Mental Stress Detection and
+                            Emotion Analysis Using Deep Learning</h2>
+                        <span class="subheading">A webapp to get facial expression from an image.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="containero">
+        <h1 class="heading">Stress Level Indicator</h1>
+        <div class="meter">
+            <span style="width: {{ score }}%" class="score {{ score_class }} {{ animate_class }}"></span>
+        </div>
+        <p class="para">Based on the image inputs your stress score is calculated</p>
+        <div class="score_value">Stress Score: {{ score }}</div>
+        <div class="buttons">
+            <a href="/post"><button class="button">Informartion Page</button></a>
+            <a href="/post"><button class="button">Ways to reduce stress</button></a>
+        </div>
+    </div>
+    {% endblock %}
+</body>
+</html>
