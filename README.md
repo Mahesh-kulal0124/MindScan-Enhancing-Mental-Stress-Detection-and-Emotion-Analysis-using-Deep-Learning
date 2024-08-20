@@ -1,0 +1,2 @@
+# MindScan-Enhancing Mental Stress Detection and Emotion Analysis using Deep Learning
+  Oct, 2023 – May, 2024 This project detects stress by analyzing facial expressions using deep learning techniques. It uses Python,  HTML, CSS, and JavaScript to build a user-friendly, non-intrusive system that accurately assesses stress levels.  The system leverages convolutional neural networks (CNNs) to recognize emotions and calculate stress based on assigned weights.
